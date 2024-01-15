@@ -1,5 +1,5 @@
 const boxs = document.querySelectorAll('.box');
-let msg = document.querySelector('p');
+let msg = document.querySelector('#status');
 const playBtn = document.querySelector('#playBtn');
 const stopBtn = document.querySelector('#resetBtn');
 let x = '<img src="./assets/img/x.png" alt="xIcon" class="w-full h-full" />'
@@ -90,7 +90,7 @@ function reset(){
     options = ["", "", "", "", "", "", "", "", ""]
     currentPlayer = x;
     player = 'X';
-    isGameStart = false;
+    isGameStart = true;
     msg.textContent = `Now your turn ${player}`
 
     boxs.forEach(box => {
